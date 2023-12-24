@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <link rel="stylesheet" href="tourim.css">
+
+    <style>
+       .slider img{
+        text-align: center;
+        width: 50%;
+       }
+       .btn{
+        border: none;
+        outline: none;
+        background-color: darkcyan;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+
+       }
+       .btn:hover{
+        background-color: darkslategray;
+       }
+        
+    </style>
+    
+</head>
+<body class="c">
+    <br>
+    <br>
+    <br>
+    <!--<div>
+        
+    <img height="200px" src="m.jpg" alt="not found!">
+    <img height="200px" src="q.jpg" alt="not found">
+    <img height="200px" src="r.jpg" alt="not found">
+    <img height="200px" src="j.jpg" alt="not found!">
+    <img height="200px" src="n.jpg" alt="not found">
+    <img height="200px" src="o.jpg" alt="not found">
+    <img height="200px" src="d.jpg" alt="not found">
+    <img height="200px" src="p.jpg" alt="not found">
+    <img height="200px" src="k.jpg" alt="not found">
+    <img height="200px" src="h3.jpg" alt="not found">
+    <img height="200px" src="l.jpg" alt="not found">
+    <img height="200px" src="m.jpg" alt="not found">
+    <img height="200px" src="mmm.jpg" alt="not found">
+    <img height="200px" src="h5.jpg" alt="not found">
+    <img height="200px" src="f.jpg" alt="not found">
+    <img height="200px" src="i.jpg" alt="not found"> 
+    <img height="200px" src="nnn.jpg" alt="not found">
+    <img height="200px" src="qqq.jpg" alt="not found">
+    <img height="200px" src="h.jpg" alt="not found">
+    <img height="200px" src="c.jpg" alt="not found">
+    <img height="200px" src="h2.jpg" alt="not found">
+    <img height="200px" src="s.jpg" alt="not found">
+    <img height="200px" src="ttt.jpeg" alt="not found">
+    <img height="200px" src="vvv.webp" alt="not found">
+    <img height="200px" src="t.jpg" alt="not found">
+    <img height="200px" src="kkk.jpg" alt="not found">
+    <img height="200px" src="l.jpg" alt="not found">
+    <img height="200px" src="ll.jpg" alt="not found">
+    </div>
+    
+
+-->
+<div class="slider">
+        <img class="slider_img" src="m.jpg">
+</div>
+
+<button class="btn" onclick="prev()"> previous</button>
+<button class="btn" onclick="next()"> next</button>
+
+<script>
+    var slider_img= document.querySelector('.slider_img');
+    var images = ['q.jpg' , 'r.jpg' , 'j.jpg' , 'n.jpg' , 'o.jpg' , 'd.jpg' , 'p.jpg' , 'k.jpg' , 'h3.jpg' , 'l.jpg' , 'm.jpg' , 'mmm.jpg', 'h5.jpg' , 'f.jpg' , 'i.jpg' ,'nnn.jpg' , 'qqq.jpg' , 'h.jpg' ];
+    var i = 0;
+    function prev(){
+    if ( i <= 0 ) i = images.length;
+    i--;
+    return setimg();
+    }
+    function next(){
+    if ( i >= images.length-1) i = -1;
+    i++;
+    return setimg();
+    }
+    function setimg(){
+        return slider_img.setAttribute('src' , images[i])
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tourism in egypt</title>
+    <link rel="stylesheet" href="tourim.css">
+    <style>
+
+        #btn{
+            height: 30px;
+            width: 30px;
+            border: none;
+            background-color: rgb(51, 147, 115);
+            color: beige;
+            cursor: pointer;
+            position: fixed;
+            bottom:10px;
+            right: 10px;
+            display: none;
+        }
+    </style>
+    
+</head>
+<body class="d">
+    <div>
+    <nav>
+        <a href="#" class="logo">Egypt</a>
+        <ul>
+        <li><a href="#to" id="from">about</a></li>
+        <li><a href="#to1" id="from1">where to go</a></li>
+        <li><a href="#to2" id="from2">inspired by</a></li>
+        <li><a href="#to3" id="from3">services</a></li>
+        <li><a href="#to4" id="from4">booking</a></li>
+        <li><a href="#to5" id="from5">contact us</a></li>
+        <li><a href="form.html">sign up</a></li>
+    </ul>
+    </nav>
+    </div>
+    
+    <div class="container">
+        <p> plan your dream trip with us in one second </p>  
+    </div>
+
+    <a href="#from" id="to"><fieldset class="a"></a>
+        <legend class="a"><h2><strong>About:</strong></h2></legend>
+        <h3>why visit Egypt?</h3>
+        <p> the birthplace of civilization, Egypt is a unique country: a destination full of magic and history that offers its visitors an unforgettable experience.
+
+            Immerse yourself in a passionate fusion of adventure, culture, and mystery. Get swept away by the hustle and bustle of Cairo; lose yourself amongst colossal temples; scuba dive in the Red Sea; enjoy the peace of a cruise on the Nile and contemplate the majestic Pyramids, before treating yourself to delicious Egyptian cuisine</p>
+    </fieldset>
+    <br>
+    <br>
+    <a href="#from1" id="to1"><fieldset></a>
+       <legend class="a"><h2><strong>Where to go:<strong></h2></legend>
+        
+            <div class="a">
+        <a href="history.html"> <img class="z" height="200px" width="280px" src="aa.jpg"></a> 
+        <a href="medical.html"> <img class="z" height="200px" width="280px" src = "bb.jpg"></a>
+        <a href="beach.html"><img class="z" height="200px" width="280px" src="cc.jpg"></a>
+        <a href="adventure.html"><img class="z" height="200px" width="280px" src="dd.jpg"></a>
+        </div>
+        
+    </fieldset>
+    <br>
+    <br>
+    <a href="#from2" id="to2"><fieldset></a>
+        <legend class="a"><h2><strong>Inspiration:</strong></h2></legend>
+        <p class="a">We hoped to make your trip as easy as possible so we gathered these images to help you in your decision
+        </p>
+        <div class="a">
+        <a class="e" href="image_inspiration.html"><strong>click here </strong></a>
+        </div>
+        
+    </fieldset>
+    <br>
+    <br>
+    <a href="#from3" id="to3"><fieldset></a>
+        <legend class="a"><h2><strong>our services:</strong></h2></legend>
+        <p class="a">these are aditional services from us if you need it or in case any thing happend we hope we make it as easy as possible for you..</p>
+        <div class="a">
+        <a href="hotels.html"><img class="z" height="200px" src="hotel.jpg"></a>
+        <a href="food.html"><img class="z" height="200px" src="food.jpg"></a>
+        </div>
+    </fieldset>
+    <br>
+    <br>
+    <a href="#from4" id="to4"><fieldset></a>
+        <legend class="a"><h2><strong>Ready to plan your trip?</strong></h2></legend>
+        <div class="b">
+        <form action="index3.php" method="post">
+        <label for="des">destination:</label>
+        <input id ="des" type="text" name="txt" placeholder="where to go" required> <br><br>
+        <label for="num">How many:</label>
+        <input id="num" type="number" name="no." placeholder="number of guests" required> <br><br>
+        <label for="day">Arrival:</label>
+        <input id ="day" type="date" name="date" required>
+        <label for="lev">leaving:</label>
+        <input id="lev" type="date" name="leav" required><br><br>
+        <input type="submit" value="BOOK NOW" id="book" name="bok"> 
+        </form>
+        </div>
+    </fieldset>
+    <br>
+    <br>
+    <a href="#from5" id="to5"><fieldset></a>
+        <legend class="a"><h2><strong>Contact us:</strong></h2></legend>
+        <div class="b"> 
+        <form action="index4.php" method="post">
+        <input type="text" name="txt3" placeholder="your name please" required><br><br>
+        <input type="text" name="txt2" placeholder="your number please" required><br><br>
+        <input type="email" name="mail" placeholder="your email please" required><br><br>
+        <input type="text" name="mess" placeholder="Enter your messege"><br><br>
+        <input type="submit" value = "SEND" id="send" name="send">
+        </form>
+        </div>
+    </fieldset>
+
+
+
+    <button id="btn">^</button>
+</body>
+<script>
+    let
+    btn = document.getElementById('btn');
+    console.log(btn);
+    window.onscroll = function(){
+        if (window.scrollY>= 600)
+        {
+            btn.style.display='block';
+        }
+        else{
+            btn.style.display='none';
+        }
+        btn.onclick= function(){
+            scroll({
+                left:0,
+                top:0,
+                behavior:"smooth",
+            });
+        }
+    }
+    
+    let btn2 = document.getElementById('book');
+    console.log(book);
+    btn2.onclick= function(){
+        alert("thanks for choosing us ");
+    }
+
+    let btn3 = document.getElementById('send');
+    console.log(send);
+    btn3.onclick=function(){
+        alert("we’ll respond as soon as possible ")
+    } 
+</script>
+</html>

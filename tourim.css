@@ -1,0 +1,120 @@
+
+nav ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding:2%;
+}
+nav .logo{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: green;
+}
+.a{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times;
+    font-weight: 100;
+}
+.b{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.d{
+    
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-image:url(zzzz.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+   
+    
+}
+.c{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    font-weight: 100;
+    background-image:linear-gradient(to top ,rgba(0, 139, 132, 0.388) , white);
+    background-attachment: fixed;
+    text-align: center;
+    background-position: center;
+}
+img{
+    border-radius: 10%;
+}
+img.z:hover{
+    transition: 1s ease-in-out ;
+    transform: scale(1.1);
+}
+.e:hover{
+   color : green;
+}
+input:focus{
+    background-color: rgba(128, 128, 128, 0.581);
+    color: white;
+}
+::selection{
+    background-color: darkcyan;
+    color: white;
+}
+
+div.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 150px;
+    width: 800px;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    border-radius: 50%;
+    
+    
+}
+
+div.container>p{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-family:'Courier New', Courier, monospace;
+    font-size:x-large;
+    font: weight 100px; ;
+    padding-top: 60px;
+    color: rgb(255, 85, 0);
+    animation-iteration-count: infinite;
+    animation-name: my;
+    animation-duration: 3s;
+    
+}
+@keyframes my {
+    from{color: rgb(255, 85, 0)}
+    to{color: green}
+}
+
+
